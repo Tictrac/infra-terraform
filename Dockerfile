@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.11.11
+FROM hashicorp/terraform:0.11.14
 MAINTAINER "Tictrac"
 
 RUN apk add --update jq
