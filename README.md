@@ -1,4 +1,4 @@
-# infra-terraform 
+# infra-terraform
 
 ## Description
 Dockerfile that stored in repository is used for building Docker image that contains `terraform` tool installed. 
