@@ -1,8 +1,8 @@
-FROM hashicorp/terraform:0.11.14
-MAINTAINER "Tictrac"
+FROM hashicorp/terraform:0.12.28
 
-RUN apk add --update jq
+MAINTAINER Tictrac
+LABEL com.hashicorp.terraform.version=0.12.28
 
-ENV AUTHENTICATOR_VERSION "1.12.7/2019-03-27"
-RUN curl https://amazon-eks.s3-us-west-2.amazonaws.com/${AUTHENTICATOR_VERSION}/bin/linux/amd64/aws-iam-authenticator -o /usr/bin/aws-iam-authenticator
-RUN chmod +x /usr/bin/aws-iam-authenticator
+RUN apk update && apk add --virtual build-dependencies build-base gcc
+RUN apk add py-pip bash openssl curl jq
+RUN pip install awscli
