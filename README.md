@@ -14,12 +14,7 @@ an application. It then generates a plan for reaching that end-state and execute
 
 ## Docker
 To pull docker image use following command:
-For Quay.io:
+For JFrog:
 ```
-docker pull quay.io/tictrac/terraform:<tag>
-```
-
-For OVH:
-```
-docker pull 62q52315.gra7.container-registry.ovh.net/public/terraform:<tag>
+docker pull tictrac.jfrog.io/tictrac/terraform:<tag>
 ```
